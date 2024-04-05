@@ -1,6 +1,6 @@
 import express from 'express'
 import userRouter from './routes/users.js';
-import giftCardRouter from './routes/admin/giftcard.js'
+import giftCardRouter from './routes/giftcard.js'
 
 const app = express()
 

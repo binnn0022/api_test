@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "main": "database.js",
-  "scripts": {     
+  "scripts": {
     "dev": "npx nodemon app.js"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "ejs": "^3.1.9",
     "express": "^4.19.2",
     "mysql2": "^3.9.3",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "path-to-regexp": "^6.2.1"
   }
 }

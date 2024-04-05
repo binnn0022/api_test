@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Gift Card</title>
+</head>
+<body>
+  <h1>Order Gift Card</h1>
+  <form action="/users/<%= id %>/giftcard/order" method="POST">
+    <label for="recipient-name">Recipient Name:</label>
+    <input type="text" id="recipient-name" name="recipientName" required><br>
+
+    <label for="sender-name">Sender Name:</label>
+    <input type="text" id="sender-name" name="senderName" required><br>
+
+    <label for="recipient-email">Recipient Email:</label>
+    <input type="email" id="recipient-email" name="recipientEmail" required><br>
+
+    <label for="recipient-phone">Recipient Phone:</label>
+    <input type="tel" id="recipient-phone" name="recipientPhone" required><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+    <label for="payment-method">Payment Method:</label>
+    <select id="payment-method" name="paymentMethod" required>
+      <option value="qr">QR</option>
+      <option value="bank-transfer">Bank Transfer</option>
+    </select><br>
+
+    <label for="giftcard-amount">Gift Card Amount:</label>
+    <select id="giftcard-amount" name="giftCardAmount" required>
+      <option value="10">10 USD</option>
+      <option value="20">20 USD</option>
+      <option value="50">50 USD</option>
+    </select><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>
